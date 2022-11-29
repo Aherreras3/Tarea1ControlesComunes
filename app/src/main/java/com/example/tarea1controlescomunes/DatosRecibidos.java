@@ -27,8 +27,8 @@ public class DatosRecibidos extends AppCompatActivity {
         lblsaludo2.setText(" Nombres \n " + bundle.getString("NOMBRES"));
         lblsaludo3.setText(" Fecha \n " + bundle.getString("FN"));
         lblsaludo4.setText(" Ciudad \n " + bundle.getString("CIUDAD"));
-        lblsaludo5.setText(" Masculino \n " + bundle.getString("MASCULINO"));
-        lblsaludo6.setText(" Femenino \n " + bundle.getString("FEMENINO"));
+        lblsaludo5.setText(" Género \n " + bundle.getString("MASCULINO"));
+        lblsaludo6.setText(" Género \n " + bundle.getString("FEMENINO"));
         lblsaludo7.setText(" Correo \n " + bundle.getString("CORREO"));
         lblsaludo8.setText(" Telefono \n " + bundle.getString("TELEFONO"));
     }

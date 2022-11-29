@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    RadioButton rdbmasculino,rdbfemenino;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +45,18 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(b);
         // Iniciamos la nueva actividad
         startActivity(intent);
-
+        if(view.getId()==R.id.btnenviar){
+            validar();
+        }
     }
-
+    private void validar(){
+        String selec="Seleccionado: \n";
+        if(rdbmasculino.isChecked()==true){
+            selec+="Opcion1\n";
+        }
+        if (rdbfemenino.isChecked()) {
+            selec += "Opcion2\n";
+        }
+        Toast.makeText(getApplicationContext(),selec,Toast.LENGTH_SHORT).show();
+    }
 }
